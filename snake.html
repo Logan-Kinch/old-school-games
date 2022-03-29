@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <script src = 'snake.js'></script>
+   </head>
+
+   <body style="background-color:rgb(2, 2, 2);">
+      <a href="./index.html"> 
+         <img src="./assets/Main_Logo.png" alt="Main_Logo" style="width:200px;height:240px;" class="logo">
+      </a>
+      <div id = "score">0</div>
+      <button id= "start" onclick="main()">Start Game</button>
+      <button id="stop" onclick="stop()" style="visibility:hidden">Stop</button>
+      <button id = "reset" onclick="reset()" style="visibility:hidden">Reset</button>
+      <canvas id="snakeboard" width="1000" height="750"></canvas>
+
+      <style>
+         #snakeboard {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         }
+
+         #score 
+         {
+            text-align: left;
+            font-size: 120px;
+            color: white;
+         }
+      </style>
+   </body>
+</html>
